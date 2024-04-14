@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Signin</title>
+    <link rel="stylesheet" href="signIn.css" />
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png" id="logo">
+        <header class="errorBox">
+            <div class="error">
+                <p>
+                    <i class="fa fa-exclamation-triangle" style="font-size: 25px; color: #c40;" aria-hidden="true"></i>
+                </p>
+                <span>
+                    <h4>There was a Problem</h4>
+                    <ul class="errorList">
+                        <li class="emailErr">Enter Your Email</li>
+                        <li class="passErr">Enter Your Password</li>
+                        <li class="wrongCredentials">Wrong Credentials</li>
+                    </ul>
+                </span>
+            </div>
+        </header>
+        <!--signin starts  -->
+        <div class="signInBox">
+            <h1>Sign In</h1>
+            <div class="input email">
+                <label for="email" class="inputText">Email or Phone number</label>
+                <input type="text" name="email" id="email" class="data">
+            </div>
+
+            <div class="input password">
+                <div class="passLabel">
+                    <label for="password" class="inputText">Password</label>
+                    <label for="forgetPass"><a href="" class="forgetPass">Forget your password?</a></label>
+                </div>
+                <input type="password" name="password" class="data" id="password">
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="signInBtn loginBtn">Sign In</button>
+            </div>
+
+            <div class="terms">
+                <p>
+                    By creating an account, you agree to the Amazon
+                    <a href="">Conditions of Use and Privacy Notice</a>
+                </p>
+            </div>
+
+            <div class="keepSignIn">
+                <input type="checkbox" />
+                <label for="checkbox">Keep me signed in</label>
+                <a href="">Details</a><i class="fas fa-caret-down"></i>
+            </div>
+
+            <div class="newToAmazon">
+                <h5 class="noSpan">New to Amazon?</h5>
+            </div>
+
+            <div class="signupPage">
+                <div class="create">Create your Amazon account</div>
+            </div>
+        </div>
+    </div>
+    <!-- signin ends -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="terms">
+                <p> <a href="">Terms & Privacy Notice</a></p>
+                <p> <a href="">Send us Feedback</a></p>
+                <p> <a href="">Help</a></p>
+            </div>
+            <div class="copyright">
+                <p class="copy">© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="signIn.js"></script>
+</body>
+
+</html>

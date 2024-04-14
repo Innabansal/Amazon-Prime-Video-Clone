@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Subscription Page</title>
+    <link rel="shortcut icon" href="../images/amazon-logo.png" />
+    <link rel="stylesheet" href="afterSignIn.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href=""><img src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png" alt="logo"></a>
+        </div>
+    
+    <div class="right-menu">
+        <a href="">
+            <i class="fas fa-globe"></i>
+            <label for="lang">EN</label>
+            <i class="fas fa-caret-down arrowDown langBtn"></i>
+        </a>
+        <img src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" alt="profile">
+        <span id="userName" style="width: 120px; overflow: hidden; text-transform: capitalize ;">
+            <i class="fas fa-caret-down arrowDown langBtn"></i>
+        </span>
+    </div>
+</nav>
+    <!-- navigation ends -->
+
+    <!-- main starts -->
+    <header>
+        <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg" alt="poster-1">
+        <div class="textOverImage">
+            <h1>Welcome to Prime Video</h1>
+            <p>Join prime to watch the latest movies, Tv shows and award-winning Amazon originals</p>
+            <button type="submit" onclick="subscription('freeSubscription')">
+            Start your 30-day free trail </button>
+            <p>With select credit, debit credit, or UPI ID</p>
+            <button type="submit" onclick="subscription('annualSubscription')">
+            Annual Subcription at &#8377;1499</button>
+            <p>With select credit, debit credit, or UPI ID</p>
+            <button type="submit" onclick="subscription('quarterlySubscription')">
+            Quarterly Subcription at &#8377;499</button>
+            <p>With select credit, debit credit, or UPI ID</p>
+            <button type="submit" onclick="subscription('monthlySubscription')">
+            Monthly Subcription at &#8377;149</button>
+            <p>With select credit, debit credit, or UPI ID</p>
+        </div>
+    </header>
+
+    <header class="membershipHeader">
+        <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right.jpg" alt="poster-2" />
+        <div class="textOverImage" id="membershipDiv">
+            <h1 class="membershipHead">
+                One membership, many benefits
+            </h1>
+            <p class="membershipPara">
+                Your Prime membership now also inculdes add-free music along with unlimited free, fast delivery on eligible items, exclusive access to deals & more.
+            </p>
+            <button type="submit" onclick="signIn()">Get Started</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="section">
+            <div class="favChannels">
+                <h1>Your favorite channels all in one place</h1>
+                <p>With Prime Video Channels, find shows and movies from your favorite channelsall in one place. Enjoy with an add-on subscription to channels of your choice.</p>
+            </div>
+            <div class="channelBtn"></div>
+        </div>
+    </section>
+
+    <header class="fireTvHeader">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg" alt="poster-3" />
+        <div class="fireTvOverImage" id="fireTvDiv">
+            <h1 class="fireTvHead">Even better with Fire TV Stick</h1>
+            <p class="fireTvPara">
+                The biggest movies and Tv Shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.
+            </p>
+            <button type="submit">Get Started</button>
+        </div>
+    </header>
+
+    <header class="membershipHeader">
+        <img src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg" alt="poster-4" />
+        <div class="textOverImage" id="membershipDiv">
+            <h1 class="membershipHead">Family Friendly</h1>
+            <p class="membershipPara">
+                With easy to use Parental Controls aand a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV Shows like Peppa Pig, Powerpuff Girls, and many more.
+            </p>
+            <button type="submit">Get Started</button>
+        </div>
+    </header>
+    <!-- main ends -->
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="footer-logo" id="footer-image">
+        </div>
+        <div id="copyright">
+            <p><a href="">Terms and Privacy Notice</a></p>
+            <p><a href="">Send Us Feedback</a></p>
+            <p><a href="">Help</a></p>
+            <p class="copy">© 1996-2025,Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="../script.js"></script>
+    <script src="afterSignIn.js"></script>
+</body>
+
+</html>
